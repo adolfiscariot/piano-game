@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+}
+body {
+  position: relative;
+  background-color: greenyellow;
+}
+.piano {
+  background-color: cornflowerblue;
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  top: 10em;
+  left: 20em;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.heading {
+  display: flex;
+  margin: 15px 5%;
+  width: 300px;
+}
+.logo-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(172, 6, 172);
+  width: 50px;
+}
+.logo-text {
+  font-family: "kablammo";
+  font-size: 40px;
+  color: white;
+  padding: 0 10px;
+}
+.keys {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  margin-left: 5%;
+  background-color: black;
+  width: 90%;
+  height: 65%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.white-keys {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+.white {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.white:hover {
+  background-color: violet;
+}
+.black-keys {
+  position: absolute;
+  display: flex;
+  top: 0;
+  z-index: 1;
+  height: 60%;
+  margin: 0 40px;
+  gap: 17px;
+}
+.black {
+  border: 1px solid black;
+  border-radius: 0 0 10px 10px;
+  width: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-shadow: 2px 2px 4px red;
+}
+.black:hover {
+  background-color: rgb(223, 92, 92);
+  box-shadow: 2px 2px 4px black;
+}
+.black:active,
+.white:active {
+  transform: scale(0.9);
+}
+.hidden {
+  visibility: hidden;
+}
